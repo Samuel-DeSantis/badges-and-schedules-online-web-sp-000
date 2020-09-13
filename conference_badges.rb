@@ -11,8 +11,11 @@ def assign_rooms(names)
 end
 
 def printer(names)
-  batch_badges = batch_badge_creator(names)
-  rooms = assign_rooms(names)
-  batch_badges.each { |badge| puts badge}
-  rooms.each { |room| puts room}
+  batch_badge_creator(names).each { |badge| puts badge}
+  assign_rooms(names).each { |room| puts room}
 end
+
+#batch_badges = batch_badge_creator(names)
+#rooms = assign_rooms(names)
+#batch_badges.each { |badge| puts badge}
+#rooms.each { |room| puts room}
